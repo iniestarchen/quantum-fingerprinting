@@ -1,0 +1,32 @@
+{
+  "id": "quantum-fingerprinting",
+  "name": "Quantum Fingerprinting",
+  "category": "cryptography",
+  "description": "Exponentially compress a classical string into a quantum fingerprint that enables equality testing.",
+  "long_description": "Quantum fingerprinting encodes an n-bit classical string into a O(log n)-qubit quantum state such that two parties can test string equality using only a constant number of qubits of communication. The referee runs a SWAP test on the two fingerprints. This circuit shows fingerprints for strings '0' and '0' (identical): the SWAP test ancilla should measure 0 with certainty. For different strings, it measures 1 with probability (1 - |\u27e8f\u2081|f\u2082\u27e9|\u00b2)/2 > 0.",
+  "difficulty": "advanced",
+  "qubit_count": 3,
+  "clbit_count": 1,
+  "gate_count": 4,
+  "depth": 4,
+  "tags": [
+    "fingerprinting",
+    "equality-testing",
+    "communication-complexity",
+    "swap-test"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "c[0]=0 with certainty (identical fingerprints \u2192 |\u27e8f|f\u27e9|\u00b2=1 \u2192 P(1)=0)",
+  "references": [
+    {
+      "title": "Buhrman et al. (2001). Quantum Fingerprinting. PRL 87, 167902",
+      "url": "https://doi.org/10.1103/PhysRevLett.87.167902"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
