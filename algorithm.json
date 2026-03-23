@@ -1,0 +1,29 @@
+{
+  "slug": "quantum-fingerprint",
+  "name": "Quantum Fingerprinting",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Exponentially compress a classical string into a quantum fingerprint for equality testing.",
+  "industries": [
+    "cryptography",
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "advanced",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 2,
+  "tags": [
+    "fingerprinting",
+    "communication-complexity",
+    "exponential-compression"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 2001
+  }
+}
